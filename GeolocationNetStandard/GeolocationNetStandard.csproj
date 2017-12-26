@@ -2,6 +2,18 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard1.4</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Description>A C# class library for .NET Core that will calculate distance and cardinal direction between two sets of coordinates and provides the lat/long boundaries around an origin coordinate allowing for simple SQL or LINQ selection of locations within the given radius.</Description>
+    <Authors>scottschluer</Authors>
+    <Version>1.1.1</Version>
+    <PackageId>Geolocation.NetStandard</PackageId>
+    <Company />
+    <Product />
+    <PackageProjectUrl>https://github.com/scottschluer/geolocation</PackageProjectUrl>
+    <Copyright>(c) 2017 Scott Schluer</Copyright>
+    <RepositoryUrl>https://github.com/scottschluer/geolocation</RepositoryUrl>
+    <PackageReleaseNotes>coordinate coordinates distance latitude longitude boundaries geolocation location netcore netstandard</PackageReleaseNotes>
+    <PackageLicenseUrl>https://github.com/scottschluer/geolocation/blob/master/LICENSE</PackageLicenseUrl>
   </PropertyGroup>
 
 </Project>
