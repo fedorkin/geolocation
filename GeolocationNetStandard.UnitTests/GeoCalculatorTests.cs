@@ -57,7 +57,7 @@ namespace GeolocationNetStandard.UnitTests
             Coordinate origin = Constants.Coordinates.ValidCoordinate;
             Coordinate destination = Constants.Coordinates.ValidDestinationCoordinate;
 
-            double distance = GeoCalculator.GetDistance(origin.Latitude, origin.Longitude, destination.Latitude, destination.Longitude, distanceUnit: DistanceUnit.Kilometers);
+            double distance = GeoCalculator.GetDistance(origin.Latitude, origin.Longitude, destination.Latitude, destination.Longitude, decimalPlaces:1, distanceUnit: DistanceUnit.Kilometers);
             const double expectedResult = 121.5;
 
             Assert.AreEqual(expectedResult, distance);
@@ -69,7 +69,7 @@ namespace GeolocationNetStandard.UnitTests
             Coordinate origin = Constants.Coordinates.ValidCoordinate;
             Coordinate destination = Constants.Coordinates.ValidDestinationCoordinate;
 
-            double distance = GeoCalculator.GetDistance(origin.Latitude, origin.Longitude, destination.Latitude, destination.Longitude, distanceUnit: DistanceUnit.Meters);
+            double distance = GeoCalculator.GetDistance(origin.Latitude, origin.Longitude, destination.Latitude, destination.Longitude, decimalPlaces:1, distanceUnit: DistanceUnit.Meters);
             const double expectedResult = 121493.3;
 
             Assert.AreEqual(expectedResult, distance);
